@@ -29,7 +29,7 @@ public class CustomProblemController {
     private final CustomerProblemService customerProblemService;
 
     // ✅ 고객접수문의 리스트 조회
-    @Operation(summary = "고객접수문의 리스트 조회", description = "입력조건에 따라 접수된 고객 문의 리스트를 조회한다. 입력조건은 문의코드를 포함한 4개의 값이다.")
+    @Operation(summary = "고객접수문의 리스트 조회", description = "입력조건에 따라 접수된 고객 문의 리스트를 조회한다. 입력조건은 문의코드(0001,0002,0003) 를 포함한 4개의 값이다.")
     @ApiResponses({
         @ApiResponse(responseCode = "200", description = "OK"),
         @ApiResponse(responseCode = "403", description = "접속 권한이 없습니다.")
